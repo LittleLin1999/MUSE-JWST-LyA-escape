@@ -23,6 +23,8 @@ We present the data and results in Lin et al. 2023, which explores the escape of
   - Example: if you want to load the $f_{\rm Ly\alpha}$ of *all HAEs* in $A_V$ bins, you can read the h5 in `python` as follows:
 
     ```python
+    import h5py
+    
     stack_C00 = h5py.File('fescLya_stack_C00.h5', 'r')
     
     # load the parameter values
@@ -33,14 +35,15 @@ We present the data and results in Lin et al. 2023, which explores the escape of
     fesc = stack_C00['All']['Av']['fesc_int'][:]
     fesc_err = stack_C00['All']['Av']['fesc_int_err'][:]
     ```
-
+    
     
 
 
 
 The structure of the h5 files:
 
-├── All
+```html
+├── All 
 │   ├── Av
 │   │   ├── fesc_int (5)
 │   │   ├── fesc_int_err (5)
@@ -259,3 +262,5 @@ The structure of the h5 files:
         ├── method (5)
         ├── pars (5)
         └── pars_err (5)
+```
+
