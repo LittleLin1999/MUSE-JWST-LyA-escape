@@ -18,7 +18,7 @@ We present the data and results in Lin et al. 2023, which explores the escape of
   - There are two methods for LyA measurements: `model` and `upperlim`
 
     - `model`: the total LyA flux is measured by fitting the line profiles with Skewed Gaussian models. Usually in `ALL` and `LAE` stack result.
-    - `upperlim`: no emission feature is seen in the stack cube so we measure the fluctuation of the extracted spectra for  3$\sigma$ upper limits.  Usually in `non-LAE` stack result.
+    - `nondet`: no emission feature is seen in the stack cube so we 'forced'-measure the flux with a +- 1000 km/s window around LyA based on the Ha-based redshift.
 
   - Example: if you want to load the $f_{\rm Ly\alpha}$ of *all HAEs* in $A_V$ bins, you can read the h5 in `python` as follows:
 
