@@ -3,7 +3,12 @@ We present the data and results in Lin et al. 2023, which explores the escape of
 
 
 
-- FRESCO-GOODSS_HAE.fits: HAE catalog and detailed properties as described in Section 2 of Lin et al. 2023.
+- FRESCO-GOODSS_HAE.fits: The full HAE catalog and detailed properties as described in Section 2 of Lin et al. 2024. For convenience, we also provide the catalogs in the form of `ascii.mrt` 
+
+  - fescLyA_HAE_GOODSS_C00.dat: The HAE properties and LyA escape fraction assuming Calzetti00 dust extinction law.
+  - fescLyA_HAE_GOODSS_SMC.dat: The HAE properties and LyA escape fraction assuming SMC dust extinction law.
+
+
 - fescLya_stack_C00.h5: stacked LyA escape fraction in different property bins, assuming Calzetti dust extinction law.
 - fescLya_stack_SMC.h5: stacked LyA escape fraction in different property bins, assuming SMC dust extinction law. 
 
